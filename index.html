@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIZATOKI Cheese Roll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- START-NAVBAR -->
+    <div class="FContainer">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                            <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">RIZATOKI CHEESE ROLL</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Products</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Checkout</a></li>
+                <li class="hideOnMobile"><a href="#">Login</a></li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- END-NAVBAR -->
+
+    <!-- LOGIN-SECTION_START -->
+    <div class="Home-Page" id="Home-Page">
+        <div class="content-home">
+            <div class="page-home">
+                <h2>Welcome Friend</h2>
+                <p>Login Untuk merasakan Varian Cheese Roll Rizatoki, dengan varian rasa yang menarik, harga cukup terjangkau mulai dari 10k per box, daftar lalu login sekarang, checkout produk rizatoki </p>
+            </div>
+        </div>
+        <div class="page-login-regis">
+            <div class="container">
+                <div class="box form-box active" id="login-form">
+                    <header>
+                        <h3 class="Label-Login">Sign In</h3>
+                    </header>
+                    <form action="" method="post">
+                        <div class="field input">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" autocomplete="off" required>
+                        </div>
+                        <div class="field input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" autocomplete="off" required>
+                        </div>
+                        <div class="field">
+                            <input type="submit" class="btn" name="submit" value="Login" required>
+                        </div>
+                        <div class="links">
+                            Belum Punya Akun? <span class="btn-toggle" onclick="toggleForm('register-form')">Sign Up Now</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="box form-box" id="register-form">
+                    <header>Sign Up</header>
+                    <form action="" method="post">
+                        <div class="field input">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" autocomplete="off" required>
+                        </div>
+                        <div class="field input">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" autocomplete="off" required>
+                        </div>
+                        <div class="field input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" autocomplete="off" required>
+                        </div>
+                        <div class="field">
+                            <input type="submit" class="btn" name="submit" value="Register" required>
+                        </div>
+                        <div class="links">
+                            Anda Sudah Punya Akun? <span class="btn-toggle" onclick="toggleForm('login-form')">Sign In</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOGIN-SECTION-END -->
+
+    <!-- JAVASCRIPT-START -->
+    <script src="script.js"></script>
+    <!-- JAVASCRIPT-END -->
+</body>
+</html>
